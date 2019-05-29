@@ -448,18 +448,18 @@ body{
         #antradalis > #left{
             width: 100%;
         }
-            #antradalis > #left > .elements{
+            #antradalis > div > .elements{
                 padding: 10px 0;
             }
-                #antradalis > #left > .text2 > .h1{
+                #antradalis > div > .text2 > .h1{
                     font-size: 20px;
                     line-height: 20px;
                 }
-                #antradalis > #left > .text2 > .p{
+                #antradalis > div > .text2 > .p{
                     font-size: 14px;
                     line-height: 28px;
                 }
-                #antradalis > #left > .text2 > .p > a{
+                #antradalis > div > .text2 > .p > a{
                     font-size: 14px;
                 }
         #right{
@@ -552,18 +552,18 @@ body{
             #antradalis > #left{
                 width: 100%;
             }
-                #antradalis > #left > .elements{
+                #antradalis > div > .elements{
                     padding: 10px 0;
                 }
-                    #antradalis > #left > .text2 > .h1{
+                    #antradalis > div > .text2 > .h1{
                         font-size: 20px;
                         line-height: 20px;
                     }
-                    #antradalis > #left > .text2 > .p{
+                    #antradalis > div > .text2 > .p{
                         font-size: 14px;
                         line-height: 28px;
                     }
-                    #antradalis > #left > .text2 > .p > a{
+                    #antradalis > div > .text2 > .p > a{
                         font-size: 14px;
                     }
             #right{
@@ -667,18 +667,18 @@ body{
             #antradalis > #leftt{
                 width: 100%;
             }
-                #antradalis > #left > .elements{
+                #antradalis > div > .elements{
                     padding: 10px 0;
                 }
-                    #antradalis > #left > .text2 > .h1{
+                    #antradalis > div > .text2 > .h1{
                         font-size: 20px;
                         line-height: 20px;
                     }
-                    #antradalis > #left > .text2 > .p{
+                    #antradalis > div > .text2 > .p{
                         font-size: 14px;
                         line-height: 28px;
                     }
-                    #antradalis > #left > .text2 > .p > a{
+                    #antradalis > div > .text2 > .p > a{
                         font-size: 14px;
                     }
             #right{
