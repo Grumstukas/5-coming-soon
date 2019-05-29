@@ -159,7 +159,7 @@ body{
             width: 55%;
             padding:30px;
         }
-            #antradalis > #left > .text2{
+            #antradalis > div > .text2{
                 display: inline-block;
                 margin-block-start: 0px;
                 margin-block-end: 0px;
@@ -168,22 +168,22 @@ body{
                 font-family: Kanit;
                 color: rgb(114, 114, 114);
             }
-            #antradalis > #left > .elements{
+            #antradalis > div > .elements{
                 width: 100%;
                 padding: 20px 0;
             }
-            #antradalis > #left > .text2 > .h1{
+            #antradalis > div > .text2 > .h1{
                     text-transform: uppercase;
                     font-size: 25px;
                     line-height: 25px;
                     margin: 0 0 15px 10px;
                 }
-                #antradalis > #left > .text2 > .p {
+                #antradalis > div > .text2 > .p {
                     font-weight: 300;
                     font-size: 18px;
                     line-height: 30px;
                 }
-                #antradalis > #left > .text2 > .a{
+                #antradalis > div > .text2 > .p > a{
                     font-family: Kanit;
                     font-size:18px;
                     color: rgb(228, 76, 76);
@@ -459,7 +459,7 @@ body{
                     font-size: 14px;
                     line-height: 28px;
                 }
-                #antradalis > #left > .text2 > .a{
+                #antradalis > #left > .text2 > .p > a{
                     font-size: 14px;
                 }
         #right{
@@ -563,7 +563,7 @@ body{
                         font-size: 14px;
                         line-height: 28px;
                     }
-                    #antradalis > #left > .text2 > .a{
+                    #antradalis > #left > .text2 > .p > a{
                         font-size: 14px;
                     }
             #right{
@@ -678,7 +678,7 @@ body{
                         font-size: 14px;
                         line-height: 28px;
                     }
-                    #antradalis > #left > .text2 > .a{
+                    #antradalis > #left > .text2 > .p > a{
                         font-size: 14px;
                     }
             #right{
