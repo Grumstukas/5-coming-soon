@@ -51,6 +51,7 @@ body{
             #hero > #container > h1{
                 text-transform: uppercase;
                 font-size: 50px;
+                line-height: 50px;
                 letter-spacing: 5px;
             }
             #hero > #container > p{
@@ -167,6 +168,8 @@ body{
                 width: 100%;
                 font-family: Kanit;
                 color: rgb(114, 114, 114);
+                overflow-wrap: break-word;
+                word-wrap: break-word;
             }
             #antradalis > div > .elements{
                 width: 100%;
@@ -347,10 +350,12 @@ body{
             line-height: 10px;
             padding: 15px;
         }
-            i{
-                margin: 0px 15px;
-                padding: 3px;
+            #icon > div{
+                display: inline-block;
             }
+                #icon > div > i{
+                    padding: 10px;
+                }
             i:hover{
                 cursor: pointer;
                 text-shadow: 4px 4px 5px rgb(10, 226, 10);
@@ -395,116 +400,131 @@ body{
 
 
 
-@media (max-width: 360px){ /*{ mažiau nei 360px*/
-    #hero > #container{
-        width: 300px;
-        left: calc((100% - 300px) / 2);
-    }
-        #hero > #container > #logo1{
-            width: 40px;
-            margin: 0px calc((100% - 40px) / 2);
-        }
-        #hero > #container > .raides{
-            padding: 5px 0px;
-        }
-        #hero > #container > h1{
-            font-size: 40px;
-            letter-spacing: 1px;
-        }
-        #hero > #container > #laikas{
-            margin: 10px 0;
-            padding: 0 50px;
-        }
-            #hero > #container > #laikas > #quarter1{
-                display: inline-block;
-                width: 50%;
-                float: left;
+@media (max-width: 600px){ /*{ mažiau nei 600px*/
+            #hero > #container{
+                width: 400px;
+                left: calc((100% - 400px) / 2);
             }
-            #hero > #container > #laikas > #quarter3{
-                display: inline-block;
-                width: 50%;
-                float: left;
-            }
-            #hero > #container > #laikas > #quarter2{
-                display: inline-block;
-                width: 50%;
-                float: right;
-            }
-            #hero > #container > #laikas > #quarter4{
-                display: inline-block;
-                width: 50%;
-                float: right;
-            }
-                #hero > #container > #laikas > .div > .row_top{
-                    display: block;
-                    text-align: center;
-                    font-size: 50px;
-                    line-height: 50px;
-                    font-weight: 500;
+                #hero > #container > #logo1{
+                    width: 50px;
+                    margin: 0px calc((100% - 45px) / 2) 10px;
                 }
-                #hero > #container > #laikas > .div > .row_bottom{
-                    display: block;
-                    font-size: 20px;
+                #hero > #container > .raides{
+                    padding: 7px 0px;
                 }
-        #hero > #container > form{
-            margin: 10px 0;
-        }
-        #antradalis > #left{
-            width: 100%;
-        }
-            #antradalis > div > .elements{
-                padding: 10px 0;
+                #hero > #container > h1{
+                    font-size: 40px;
+                    line-height: 40px;
+                    letter-spacing: 3px;
+                }            
+                #hero > #container > #laikas{
+                    margin: 12px 0;
+                }
+                #hero > #container > form{
+                    margin: 17px 0;
+                }  
+            #antradalis > #left{
+                padding:20px 10px 0px 20px;
+            } 
+            #antradalis > #right{
+                width: 45%;
+                padding:20px 20px 0px 10px;
+            }
+                        #vardas{
+                            width: 100%;
+                        }
+                        #pastas{
+                            width: 100%;
+                        }
+                        #zinute > form > input:focus,textarea:focus{
+                            outline: none;
+                        }
+                        #send{
+                            display: inline-block;
+                            float: right;
+                            padding: 10px 20px;
+                            margin: 40px 0px 30px;
+                        }
+            #logo2{
+                padding: 10px;
+            }
+                #logo2 > img{
+                    height: 40px;
+                }
+}
+@media (max-width: 500px){/*{ mažiau nei 500px*/
+            #hero > #container{
+                width: 300px;
+                left: calc((100% - 300px) / 2);
+                top: 10px;
+                bottom: 10px;
+            }
+                #hero > #container > #logo1{
+                    width: 50px;
+                    margin: 0px calc((100% - 50px) / 2);
+                }
+                #hero > #container > .raides{
+                    padding: 7px 0px;
+                }
+                #hero > #container > h1{
+                    font-size: 40px;
+                    line-height: 40px;
+                    letter-spacing: 3px;
+                }              
+                #hero > #container > #laikas{
+                    margin: 5px 0;
+                    padding: 0px 50px;
+                }
+                    #hero > #container > #laikas > .quarter{
+                        width: 50%;
+                    }
+                #hero > #container > form{
+                    margin: 7px 0;
+                }
+                    #hero > #container > form > input{
+                        height: 30px;
+                    }    
+                    .button{
+                        margin: 15px 0 0 0;
+                    }
+    
+                #hero > #container > #mouse{
+                    margin: 5px 0;    
+                }
+
+            #antradalis > #left{
+                width: 100%;
+                padding:20px;
             }
                 #antradalis > div > .text2 > .h1{
-                    font-size: 20px;
-                    line-height: 20px;
-                }
-                #antradalis > div > .text2 > .p{
-                    font-size: 14px;
-                    line-height: 28px;
-                }
-                #antradalis > div > .text2 > .p > a{
-                    font-size: 14px;
-                }
-        #right{
-            width: 100%;
-        }
-                    #vardas{
-                        display: inline-block;
-                        float: left;
-                        width: 47%;
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        line-height: 20px;
+                        margin: 0 0 10px 5px;
                     }
-                    #pastas{
-                        display: inline-block;
-                        float: right;
-                        width: 47%;
+                    #antradalis > div > .text2 > .p {
+                        font-size: 16px;
+                        line-height: 25px;
                     }
-                    #send{
-                        margin: 20px 0 30px 0;
+                    #antradalis > div > .text2 > .p > a{
+                        font-size:16px;
                     }
-    footer{
-        padding: 0 40px 5px 40px;
-    }
-        #logo2{
-            padding: 10px 10px 10px 10px;
-        }
-            #logo2 > img{
-                height: 36px;
-            }
-        #links{
-            padding: 10px 15px;
-        }
-            #links > div{
-                display: inline-block;
+            #antradalis > #right{
                 width: 100%;
+                padding:20px;
             }
-            #links > #middle{
-                border: none;
+                        #send{
+                            display: inline-block;
+                            float: right;
+                            padding: 10px 20px;
+                            margin-top: 40px;
+                        }
+            #logo2{
+                padding: 20px 10px 10px 10px;
             }
-        #end{
-            line-height: 14px;
-            padding: 10px 20px;
-        }
+                i{
+                    margin: 0px 10px;
+                }
 }
 @media (max-width: 384px){ /*{ mažiau nei 384px*/
         #hero > #container{
@@ -616,127 +636,355 @@ body{
                 line-height: 14px;
                 padding: 10px 20px;
             }
+}
+@media (max-width: 360px){ /*{ mažiau nei 360px*/
+    #hero > #container{
+        width: 300px;
+        left: calc((100% - 300px) / 2);
     }
+        #hero > #container > #logo1{
+            width: 40px;
+            margin: 0px calc((100% - 40px) / 2);
+        }
+        #hero > #container > .raides{
+            padding: 5px 0px;
+        }
+        #hero > #container > h1{
+            font-size: 40px;
+            letter-spacing: 1px;
+        }
+        #hero > #container > #laikas{
+            margin: 10px 0;
+            padding: 0 50px;
+        }
+            #hero > #container > #laikas > #quarter1{
+                display: inline-block;
+                width: 50%;
+                float: left;
+            }
+            #hero > #container > #laikas > #quarter3{
+                display: inline-block;
+                width: 50%;
+                float: left;
+            }
+            #hero > #container > #laikas > #quarter2{
+                display: inline-block;
+                width: 50%;
+                float: right;
+            }
+            #hero > #container > #laikas > #quarter4{
+                display: inline-block;
+                width: 50%;
+                float: right;
+            }
+                #hero > #container > #laikas > .div > .row_top{
+                    display: block;
+                    text-align: center;
+                    font-size: 50px;
+                    line-height: 50px;
+                    font-weight: 500;
+                }
+                #hero > #container > #laikas > .div > .row_bottom{
+                    display: block;
+                    font-size: 20px;
+                }
+        #hero > #container > form{
+            margin: 10px 0;
+        }
+        #antradalis > #left{
+            width: 100%;
+        }
+            #antradalis > div > .elements{
+                padding: 10px 0;
+            }
+                #antradalis > div > .text2 > .h1{
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+                #antradalis > div > .text2 > .p{
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+                #antradalis > div > .text2 > .p > a{
+                    font-size: 14px;
+                }
+        #right{
+            width: 100%;
+        }
+                    #vardas{
+                        display: inline-block;
+                        float: left;
+                        width: 47%;
+                    }
+                    #pastas{
+                        display: inline-block;
+                        float: right;
+                        width: 47%;
+                    }
+                    #send{
+                        margin: 20px 0 30px 0;
+                    }
+    footer{
+        padding: 0 40px 5px 40px;
+    }
+        #logo2{
+            padding: 10px 10px 10px 10px;
+        }
+            #logo2 > img{
+                height: 36px;
+            }
+        #links{
+            padding: 10px 15px;
+        }
+            #links > div{
+                display: inline-block;
+                width: 100%;
+            }
+            #links > #middle{
+                border: none;
+            }
+        #end{
+            line-height: 14px;
+            padding: 10px 20px;
+        }
+        #icon > div > i{
+            padding: 10px 5px;
+        }
+}
 @media (max-width: 320px){ /*{ mažiau nei 320px*/
-        #hero > #container{
-            width: 280px;
-            left: calc((100% - 280px) / 2);
-            top: 10px;
-        }
-            #hero > #container > #logo1{
-                width: 40px;
-                margin: 10px calc((100% - 40px) / 2);
-            }
-            #hero > #container > .raides{
-                padding: 5px 0px;
-            }
-            #hero > #container > h1{
-                font-size: 30px;
-                line-height: 40px;
-            }
-            #hero > #container > p{
-                font-size: 12px;
-            }              
-            #hero > #container > #laikas{
-                margin: 5px 0;
-                padding: 0 40px;
-            }
-                #hero > #container > #laikas > #quarter1{
-                    display: inline-block;
-                    width: 50%;
-                    float: left;
-                }
-                #hero > #container > #laikas > #quarter3{
-                    display: inline-block;
-                    width: 50%;
-                    float: left;
-                }
-                #hero > #container > #laikas > #quarter2{
-                    display: inline-block;
-                    width: 50%;
-                    float: right;
-                }
-                #hero > #container > #laikas > #quarter4{
-                    display: inline-block;
-                    width: 50%;
-                    float: right;
-                }
-                    #hero > #container > #laikas > .div > .row_top{
-                        display: block;
-                        text-align: center;
-                        font-size: 30px;
-                        line-height: 30px;
-                        font-weight: 500;
-                    }
-                    #hero > #container > #laikas > .div > .row_bottom{
-                        display: block;
-                        font-size: 20px;
-                    }
-            #hero > #container > form{
-                margin: 5px 0;
-            }
-                #hero > #container > form > input{
-                    height: 30px;
-                }
-                .button{
-                    padding: 5px 50px;
-                    margin: 15px 0 0 0;
-                }
-            #antradalis > #leftt{
-                width: 100%;
-            }
-                #antradalis > div > .elements{
-                    padding: 10px 0;
-                }
-                    #antradalis > div > .text2 > .h1{
-                        font-size: 20px;
-                        line-height: 20px;
-                    }
-                    #antradalis > div > .text2 > .p{
-                        font-size: 14px;
-                        line-height: 28px;
-                    }
-                    #antradalis > div > .text2 > .p > a{
-                        font-size: 14px;
-                    }
-            #right{
-                width: 100%;
-            }
-                        #vardas{
-                            display: inline-block;
-                            float: left;
-                            width: 47%;
-                        }
-                        #pastas{
-                            display: inline-block;
-                            float: right;
-                            width: 47%;
-                        }
-                        #send{
-                            margin: 20px 0 30px 0;
-                        }
-        footer{
-            padding: 0 40px 5px 40px;
-        }
-           
-            #logo2{
-                padding: 10px 10px 10px 10px;
-            }
-                #logo2 > img{
-                    height: 36px;
-                }
-            #links{
-                padding: 10px 15px;
-            }
-                #links > div{
-                    display: inline-block;
-                    width: 100%;
-                }
-                #links > #middle{
-                    border: none;
-                }
-            #end{
-                line-height: 14px;
-                padding: 10px 20px;
-            }
+    #hero > #container{
+        width: 280px;
+        left: calc((100% - 280px) / 2);
+        top: 10px;
     }
+        #hero > #container > #logo1{
+            width: 40px;
+            margin: 10px calc((100% - 40px) / 2);
+        }
+        #hero > #container > .raides{
+            padding: 5px 0px;
+        }
+        #hero > #container > h1{
+            font-size: 30px;
+            line-height: 40px;
+        }
+        #hero > #container > p{
+            font-size: 12px;
+        }              
+        #hero > #container > #laikas{
+            margin: 5px 0;
+            padding: 0 40px;
+        }
+            #hero > #container > #laikas > #quarter1{
+                display: inline-block;
+                width: 50%;
+                float: left;
+            }
+            #hero > #container > #laikas > #quarter3{
+                display: inline-block;
+                width: 50%;
+                float: left;
+            }
+            #hero > #container > #laikas > #quarter2{
+                display: inline-block;
+                width: 50%;
+                float: right;
+            }
+            #hero > #container > #laikas > #quarter4{
+                display: inline-block;
+                width: 50%;
+                float: right;
+            }
+                #hero > #container > #laikas > .div > .row_top{
+                    display: block;
+                    text-align: center;
+                    font-size: 30px;
+                    line-height: 30px;
+                    font-weight: 500;
+                }
+                #hero > #container > #laikas > .div > .row_bottom{
+                    display: block;
+                    font-size: 20px;
+                }
+        #hero > #container > form{
+            margin: 5px 0;
+        }
+            #hero > #container > form > input{
+                height: 30px;
+            }
+            .button{
+                padding: 5px 50px;
+                margin: 15px 0 0 0;
+            }
+        #antradalis > #leftt{
+            width: 100%;
+        }
+            #antradalis > div > .elements{
+                padding: 10px 0;
+            }
+                #antradalis > div > .text2 > .h1{
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+                #antradalis > div > .text2 > .p{
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+                #antradalis > div > .text2 > .p > a{
+                    font-size: 14px;
+                }
+        #right{
+            width: 100%;
+        }
+                    #vardas{
+                        display: inline-block;
+                        float: left;
+                        width: 47%;
+                    }
+                    #pastas{
+                        display: inline-block;
+                        float: right;
+                        width: 47%;
+                    }
+                    #send{
+                        margin: 20px 0 30px 0;
+                    }
+    footer{
+        padding: 0 40px 5px 40px;
+    }
+        
+        #logo2{
+            padding: 10px 10px 10px 10px;
+        }
+            #logo2 > img{
+                height: 36px;
+            }
+        #links{
+            padding: 10px 15px;
+        }
+            #links > div{
+                display: inline-block;
+                width: 100%;
+            }
+            #links > #middle{
+                border: none;
+            }
+        #end{
+            line-height: 14px;
+            padding: 10px 20px;
+        }
+        #icon > div > i{
+            padding: 10px 3px;
+        }
+}
+@media (max-width: 280px){ /*{ mažiau nei 280px*/
+    #hero > #container{
+        width: 200px;
+        left: calc((100% - 200px) / 2);
+        top: 10px;
+    }
+        #hero > #container > #logo1{
+            width: 40px;
+            margin: 10px calc((100% - 40px) / 2);
+        }
+        #hero > #container > .raides{
+            padding: 5px 0px;
+        }
+        #hero > #container > h1{
+            font-size: 30px;
+            line-height: 40px;
+            letter-spacing: 0;
+        }
+        #hero > #container > p{
+            font-size: 12px;
+        }              
+        #hero > #container > #laikas{
+            margin: 5px 0;
+            padding: 0;
+        }
+            #hero > #container > #laikas > .quarter{
+                width: 50%;
+                float: left;
+            }
+                #hero > #container > #laikas > .quarter > .row_top{
+                    display: block;
+                    text-align: center;
+                    font-size: 30px;
+                    line-height: 30px;
+                    font-weight: 500;
+                }
+                #hero > #container > #laikas > .quarter > .row_bottom{
+                    display: block;
+                    font-size: 20px;
+                }
+        #hero > #container > form{
+            margin: 10px 0;
+        }
+            #hero > #container > form > input{
+                height: 30px;
+            }
+            .button{
+                padding: 5px 50px;
+                margin: 15px 0 0 0;
+            }
+        #antradalis > #leftt{
+            width: 100%;
+        }
+            #antradalis > div > .elements{
+                padding: 10px 0;
+            }
+                #antradalis > div > .text2 > .h1{
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+                #antradalis > div > .text2 > .p{
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+                #antradalis > div > .text2 > .p > a{
+                    font-size: 14px;
+                }
+        #right{
+            width: 100%;
+        }
+                    #vardas{
+                        display: inline-block;
+                        float: left;
+                        width: 100%;
+                    }
+                    #pastas{
+                        display: inline-block;
+                        float: right;
+                        width: 100%;
+                    }
+                    #send{
+                        margin: 20px 0 30px 0;
+                    }
+    footer{
+        padding: 0 40px 5px 40px;
+    }
+        
+        #logo2{
+            padding: 10px 10px 10px 10px;
+        }
+            #logo2 > img{
+                height: 36px;
+            }
+        #links{
+            padding: 15px 15px;
+        }
+            #links > div{
+                display: inline-block;
+                width: 100%;
+            }
+            #links > #middle{
+                border: none;
+            }
+        #end{
+            line-height: 14px;
+            padding: 10px 20px;
+        }
+        #icon > div > i{
+            padding: 10px 0px;
+        }
+}
