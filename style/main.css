@@ -213,10 +213,6 @@ body{
                         float: right;
                         text-align: right;
                     }
-                    #p1{padding-right: 10%;}
-                    #p2{padding-right: 14%;}
-                    #p3{padding-right: 14%;}
-
                     #grafikai > div > .visas{
                         display: inline-block;
                         width: 100%;
@@ -228,7 +224,7 @@ body{
                     }
                         #grafikai > div > .visas > .dalis{
                             margin: 2px 0px 10px;
-                            background-color:  rgb(10, 226, 10);
+                            background-color:  #6EA92E;
                             height: 6px;
                             border-radius: 3px;
                             animation-name: coloring;
@@ -379,6 +375,14 @@ body{
             padding: 15px;
             text-align: center;
         }
+            #links > div{
+                display: inline-block;
+                padding: 1px 3px;
+            }
+            #links > #middle{
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+            }
         #end{
             display: inline-block;
             width: 100%;
@@ -490,6 +494,13 @@ body{
         #links{
             padding: 10px 15px;
         }
+            #links > div{
+                display: inline-block;
+                width: 100%;
+            }
+            #links > #middle{
+                border: none;
+            }
         #end{
             line-height: 14px;
             padding: 10px 20px;
@@ -594,6 +605,13 @@ body{
             #links{
                 padding: 10px 15px;
             }
+                #links > div{
+                    display: inline-block;
+                    width: 100%;
+                }
+                #links > #middle{
+                    border: none;
+                }
             #end{
                 line-height: 14px;
                 padding: 10px 20px;
@@ -710,6 +728,13 @@ body{
             #links{
                 padding: 10px 15px;
             }
+                #links > div{
+                    display: inline-block;
+                    width: 100%;
+                }
+                #links > #middle{
+                    border: none;
+                }
             #end{
                 line-height: 14px;
                 padding: 10px 20px;
