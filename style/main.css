@@ -61,22 +61,172 @@ body{
             #hero > #container > #laikas{
                 display: inline-block;
                 width: 100%;
+                height: 80px;
                 margin: 20px 0;
                 color: white;
                 text-align: center;
             }
                 #hero > #container > #laikas > .quarter{
                     display: inline-block;
-                    width: 25%;
+                    width: 23%;
+                    height: 80px;
                     float: left;
+                }
+                #hero > #container > #laikas > .q1{
+                    width: 30%;
                 }
                     #hero > #container > #laikas > .quarter > .row_top{
                         display: block;
+                        width: 100%;
+                        height: 60px;
                         text-align: center;
                         font-size: 50px;
-                        line-height: 50px;
+                        line-height: 60px;
                         font-weight: 500;
+                        overflow: hidden;
+                        padding: 0px 10px;
                     }
+                        #hero > #container > #laikas > .q1 > .row_top{
+                            padding: 0px 15px;
+                        }
+                        #hero > #container > #laikas > .q3 > .row_top{
+                            padding: 0px 20px;
+                        }
+                        #hero > #container > #laikas > .q4 > .row_top{
+                            padding: 0px 20px;
+                        }
+
+                        .sec-1, .sec-10,.min-1,.min-10,.val,.d1,.d2,.d3{
+                            display: inline-block;
+                            float: left;
+                            width: 50%;
+                            text-align: center;
+                            }
+
+                            .d3{
+                                display: inline-block;
+                                float: right;
+                                width: 33%;
+                                margin-top: 0px;
+                                animation: diena_3 86400000s steps(10, end) infinite;
+                            }
+                            @keyframes diena_3{
+                                0%{
+                                    margin-top: 0px;
+                                }
+                                100%{
+                                    margin-top: -600px;
+                                }
+                            }
+                            .d2{
+                                display: inline-block;
+                                float: right;
+                                width: 33%;
+                                margin-top: 0px;
+                                animation: diena_2 8640000s steps(10, end) infinite;
+                            }
+                            @keyframes diena_2{
+                                0%{
+                                    margin-top: 0px;
+                                }
+                                100%{
+                                    margin-top: -600px;
+                                }
+                            }
+                            .d1{
+                                display: inline-block;
+                                float: right;
+                                width: 33%;
+                                margin-top: 0px;
+                                animation: diena_1 864000s steps(10, end) infinite;
+                            }
+                            @keyframes diena_1{
+                                0%{
+                                    margin-top: 0px;
+                                }
+                                100%{
+                                    margin-top: -600px;
+                                }
+                            }
+
+                            .val{
+                                display: inline-block;
+                                float: right;
+                                width: 100%;
+                                margin-top: 0px;
+                                animation: valandos 86400s steps(24, end) infinite;
+                            }
+                            @keyframes valandos{
+                                0%{
+                                    margin-top: 0px;
+                                }
+                                100%{
+                                    margin-top: -1440px;
+                                }
+                            }
+                            .min-1{
+                                display: inline-block;
+                                float: right;
+                                margin-top: 0px;
+                                animation: minutes_1 600s steps(10, end) infinite;
+                            }
+                            @keyframes minutes_1{
+                                0%{
+                                    margin-top: 0px;
+                                }
+                                100%{
+                                    margin-top: -600px;
+                                }
+                            }
+                            .min-10{
+                                display: inline-block;
+                                float: left;
+                                margin-top: 0px;
+                                animation: minutes_10 3600s steps(6, end) infinite;
+                            }
+                            @keyframes minutes_10{
+                                0%{
+                                    margin-top: 0px;
+                                }
+                                100%{
+                                    margin-top: -360px;
+                                }
+                            }
+                            .sec-1{
+                                display: inline-block;
+                                float: right;
+                                margin-top: 0px;
+                                animation: sekundes_1 10s steps(10) infinite;
+                            }
+                            @keyframes sekundes_1{
+                                0%{
+                                    margin-top: 0px;
+                                }
+                                100%{
+                                    margin-top: -600px;
+                                }
+                            }
+                            .sec-10{
+                                display: inline-block;
+                                float: left;
+                                margin-top: 0px;
+                                animation: sekundes_10 60s steps(6) infinite;
+                            }
+                            @keyframes sekundes_10{
+                                0%{
+                                    margin-top: 0px;
+                                }
+                                100%{
+                                    margin-top: -360px;
+                                }
+                            }
+
+
+
+
+
+
+
                     #hero > #container > #laikas > .quarter > .row_bottom{
                         display: block;
                         font-size: 20px;
@@ -576,7 +726,7 @@ body{
                 margin: 10px 0;
                 padding: 0 50px;
             }
-                #hero > #container > #laikas > #quarter1{
+                /* #hero > #container > #laikas > #quarter1{
                     display: inline-block;
                     width: 50%;
                     float: left;
@@ -595,7 +745,7 @@ body{
                     display: inline-block;
                     width: 50%;
                     float: right;
-                }
+                } */
                     #hero > #container > #laikas > .div > .row_top{
                         display: block;
                         text-align: center;
