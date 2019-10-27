@@ -6,7 +6,7 @@ This project is for educational porpuses only.
 
 Site published at https://grumstukas.github.io/ComingSoon/
 
-### Authors
+#### Authors
 [Toma](https://github.com/Grumstukas)
-### Teacher
+#### Teacher
 [Rimantas](https://github.com/belauzas)
